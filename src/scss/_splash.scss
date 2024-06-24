@@ -1,0 +1,59 @@
+@keyframes hideAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.splash-screen {
+    position: fixed;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    /* Set your desired background color */
+    opacity: 1;
+    z-index: 9999;
+}
+
+.hide {
+    animation: hideAnimation 1s ease-out forwards;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // transform: translateY(100vh);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    /* Adjust the size of your logo */
+    height: 150px;
+    /* Add any additional styles for your logo */
+
+}
+
+
+.app-name {
+    margin-top: 20px;
+    /* Add any additional styles for your app name */
+}
+
+.loading-container {
+    margin-top: 30px;
+}
